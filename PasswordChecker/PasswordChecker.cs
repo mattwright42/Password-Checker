@@ -8,6 +8,11 @@ namespace PasswordChecker
 {
     class PasswordChecker
     {
+        public static bool Contains(string target, string list)
+		{
+            return target.IndexOfAny(list.ToCharArray()) != -1;
+        }
+
         public static void Main(string[] args)
         {
             int minLength = 8;
@@ -25,19 +30,19 @@ namespace PasswordChecker
             {
                 score++;
             }
-            if (password.Contains(lowercase))
+            if (Contains(password,lowercase))
             {
                 score++;
             }
-            if (password.Contains(uppercase))
+            if (Contains(password,uppercase))
             {
                 score++;
             }
-            if (password.Contains(digits))
+            if (Contains(password,digits))
             {
                 score++;
             }
-            if (password.Contains(specialChars))
+            if (Contains(password,specialChars))
             {
                 score++;
             }
