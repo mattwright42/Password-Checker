@@ -55,7 +55,7 @@ namespace PasswordChecker
                     Console.WriteLine("Congratulations! Your password is extrememly strong.");
                     break;
                 case 4:
-                    Console.WriteLine("Congratualations! Your password is extrememly strong.");
+                    Console.WriteLine("Congratualations! Your password is extremely strong.");
                     break;
                 case 3:
                     Console.WriteLine("Congratulations! Your password is strong.");
